@@ -31,11 +31,11 @@ app.post('/main', (req, res) => {
     }catch(err){
         console.log(err);
         done(err);
-}
+    }
 });
 app.get('/', (req, res) => {
     res.render('login');
-})
+});
 
 
 app.use((err, req, res, next) => { // 에러를 처리하는 미들웨어. 인자가 4개면 에러처리이닷
